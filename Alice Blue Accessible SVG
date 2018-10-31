@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Accessible SVG</title>
 <meta name="description" content="Address SVG image accessibility issues.">
-<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0; maximum-scale=1.0, width=device-width">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
 <meta name="author" content="Lynn Stanikmas">
 <style>
 * {
@@ -37,7 +37,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	background-image: url('images/symphony.png');
+	background:#aab2b1;
 	}
 
 #wrapper{
@@ -60,24 +60,23 @@ rect {
 		
 </style>
 </head>
-<html>
 <body>
 
 	<div id="wrapper">
 
 		<p>
-			<svg width="500px" height="500px" role="image" aria-labelledby="title desc" id="alice" viewbox="0 0 500 500">
+			<svg width="500" height="500" role="img" aria-labelledby="title desc" id="alice" viewbox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
 				<title id="title">Alice Blue Accessible SVG</title>
 				<desc id="desc">The color Alice Blue is named for Alice Roosevelt Longworth, American writer and prominent socialite. She was the eldest child of U.S. President Theodore Roosevelt and the only child of Roosevelt and his first wife, Alice Hathaway Lee.</desc>
-				<a xlink href="#alice" tabindex="0" role="link"> <!--accessibility feature for user to tab to the link with the exception of NVDA in IE-->
+				<use xlink:href="#alice" tabindex="0" role="link" /> <!--accessibility feature for user to tab to the link with the exception of NVDA in IE-->
 				<g aria-labelledby="shapestitle shapesdesc">
 					<title id="shapestitle">SVG Shapes</title>
-					<desc id="shapesdesc">These are an assortment of SVG shapes in a group.<desc>
-					<rect x="0" y="0" width="500" height="250"/>
-					<circle cx="10" cy="40" r="100" fill="#ED6E46"/>
-					<ellipse cx="100" cy="100" rx="100" ry="50" fill="#7AA20D"/>
-					<line x1="5" y1="5" x2="100" y2="100" stroke="#765373" stroke-width="8"/>
-					<polyline points="0,40,40,40,40,80,80,80,80,120,120,120,120,160" fill="none" stroke="#BBC42A" stroke-width="6"/>
+					<desc id="shapesdesc">These are an assortment of SVG shapes in a group.</desc>
+					<rect x="0" y="0" width="500" height="250" />
+					<circle cx="10" cy="40" r="100" fill="#ED6E46" />
+					<ellipse cx="100" cy="100" rx="100" ry="50" fill="#7AA20D" />
+					<line x1="5" y1="5" x2="100" y2="100" stroke="#765373" stroke-width="8" />
+					<polyline points="0,40,40,40,40,80,80,80,80,120,120,120,120,160" fill="none" stroke="#BBC42A" stroke-width="6" />
 				</g>
 			</svg>
 		</p>
