@@ -69,9 +69,9 @@ rect {
 				<title>Alice Blue Accessible SVG</title>
 				<desc>The color Alice Blue is named for Alice Roosevelt Longworth, American writer and prominent socialite. She was the eldest child of U.S. President Theodore Roosevelt and the only child of Roosevelt and his first wife, Alice Hathaway Lee.</desc>
 				<use href="#alice" tabindex="0" role="link" /> <!--accessibility feature for user to tab to the link with the exception of NVDA in IE-->
-				<g aria-labelledby="shapestitle shapesdesc">
-					<title id="shapestitle">SVG Shapes</title>
-					<desc id="shapesdesc">These are an assortment of SVG shapes in a group.</desc>
+				<g>
+					<title>SVG Shapes</title>
+					<desc>These are an assortment of SVG shapes in a group.</desc>
 					<rect x="0" y="0" width="500" height="250" />
 					<circle cx="10" cy="40" r="100" fill="#ED6E46" />
 					<ellipse cx="100" cy="100" rx="100" ry="50" fill="#7AA20D" />
